@@ -61,3 +61,40 @@
 .aboutImage {
     max-width: 100%;
 }
+
+#navigation {
+    background-color: rgb(255, 137, 2);
+    padding: 10px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #fff;
+}
+
+#navigation li a:hover {
+    color: rgb(204, 109, 0);
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #aaa;
+}
+
+.navbar-toggler-icon {
+    background: url(../img/icon-nav-toggler.png);
+    background-size: 100%;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+}
