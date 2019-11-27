@@ -4,14 +4,21 @@
     <head>
 
         <title>String Theory music lessons</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/superslides.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         
     </head>
 
     <body>
+
+        <div class="loader">
+            <div class="inner"></div>
+        </div>
 
         <!-- Header/Slides section (top) -->
         <div id="slides">
@@ -25,9 +32,13 @@
                 </div>
 
                 <div class="mytitle">
-                    <div class="heading">
-                        <p class="main">WE TEACH</p>
-                        <p class="sub typed"></p>
+                    <div class="row heading">
+                        <div class="col-md-6 d-flex justify-content-end my-auto">
+                            <p class="main">We Teach:</p>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-start my-auto">
+                            <p class="sub typed"></p>
+                        </div>
                     </div>
                 </div>
 
@@ -38,6 +49,7 @@
             
         </div>
 
+        <!-- Navigator menu section (main) -->
         <nav id="navigation" nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">HOME</a>
 
@@ -49,53 +61,235 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">LESSONS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#pricing">PRICING</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#videos">VIDEOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!-- About section (2nd) -->
+        <!-- VideoAd section -->
+        <div id="videoAd" class="videoAdSection">
+
+            <div class="text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KV6AtgLzkTo?controls=0&autohide=1&loop=1&playlist=KV6AtgLzkTo" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- About section -->
         <div id="about" class="section">
 
             <div class="container">
 
                 <div class="row">
 
-                    <div class="col-md-5">
-                        <img class="aboutImage" src="https://via.placeholder.com/300x500">
-                    </div>
-
-                    <div class="col-md-7">
-
-                        <h6>String Theory is a music school located in Nicosia, Cyprus</h6>
-
-                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/KV6AtgLzkTo?controls=0&autohide=1&loop=1&playlist=KV6AtgLzkTo" frameborder="0" allow="controls; autoplay; encrypted-media; gyroscope; picture-in-picture; loop" allowfullscreen></iframe></p>
-
-                    </div>
-
+                    <h5>String Theory CY is a music school located in Nicosia, Cyprus</h5>
+                
                 </div>
 
+                <div class="row section">
+
+                    <div class="col-md-1">
+                    </div>
+
+                    <div class="col-md-11">
+
+                        <h6>Available music lessons:</h6>
+                        <p class="tab">Lessons are available for all ages and abilities (beginner to advanced) and cover many music styles (rock, pop, metal, alternative, fusion, funk, classical etc). Emphasize will be given on the style the student favors the most and his/her personal goals. We offer the following lessons:</p>
+                        <p class="tab">
+                            <ul class="tab">
+                                <li>Guitar [Electric, Acoustic, Classical, Bass]</li>
+                                <li>Piano [Modern, Classical]</li>
+                                <li>Drums</li>
+                                <li>Vocals</li>
+                                <li>Wind/Brass instruments</li>
+                                <li>Music theory</li>
+                                <li>Music technology [Recording, Cubase, Sibelius]</li>
+                                <li>and much more, ask for availability</li>
+                            </ul>
+                        </p>
+                        <h6>Exams:</h6>
+                        <p class="tab">
+                        It is up to the student if they want to take exams. Any music examination is a proper motivational tool to force a little bit more practicing time and dedication. It is not necessary for all people, yet always beneficial. The international graded music exams we prepare the students for are:
+                        </p>
+                        <p class="tab">
+                            <ul class="tab">
+                                <li>Rockschool</li>
+                                <li>Trinity College London</li>
+                                <li>ABRSM – Associated Board of the Royal Schools of Music, London</li>
+                            </ul>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing section -->
+        <div id="pricing" class="section pricingSection">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h3>PRICING</h3>
+                        <p>Our current offers are based on the package you choose:</p>
+                    </div>
+
+                    <div class="owl-carousel owl-theme">
+
+                        <div class="price">
+                            <span class="chart" data-percent="100">
+                                <span class="percent"></span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>€25 PER LESSON</h4>
+                            <p>Single 60-minute lesson</p>
+                        </div> 
+
+                        <div class="price">
+                            <span class="chart" data-percent="75">
+                                <span class="percent"></span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>€75 PER MONTH</h4>
+                            <p>One month<br>Four weekly 60-minute lessons</p>
+                        </div> 
+
+                        <div class="price">
+                            <span class="chart" data-percent="68">
+                                <span class="percent"></span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>€204 PER TRIMESTER</h4>
+                            <p>Three months*<br>of four weekly 60-minute lessons</p>
+                        </div> 
+ 
+                        <div class="price">
+                            <span class="chart" data-percent="63">
+                                <span class="percent">50</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>€630 SEASONAL</h4>
+                            <p>Ten months* (Sept-June)<br>of four weekly 60-minute lessons</p>
+                        </div> 
+                    </div>
+                </div>
+
+                    <div class="row">
+
+                        <div class="col-md-1"></div>
+    
+                        <div class="col-md-11">
+                            <h6>Info:</h6>
+                            <p class="tab">Lessons are strictly personal.<br>A 10% discount to another registration of a member of the same family.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-1"></div>
+        
+                        <div class="col-md-11">
+                            <p><i>* Trimester and Season rates include the following national holidays:</i></p>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-5">
+                            <ul>
+                                <li><i>October 28th</i></li>
+                                <li><i>December 24th - January 6th</i></li>
+                                <li><i>Green Monday</i></li>
+                                <li><i>March 25th</i></li>
+                                <li><i>Easter’s holy and bright weeks</i></li>
+                                <li><i>April 1st</i></li>
+                                <li><i>May 1st</i></li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <h6><i>Exceptions:</i></h6>
+                            <p><i>Usually a month provides 4 lessons. Some months have 5 lessons and make up for the missing lessons of the holidays. If however you missed more lessons than should, we will try our best to make up for it, in such way you paid for the average of 4 lessons per month.</i></p>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <!-- Contact section (bottom) -->
+        <div id="contact" class="contactSection section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h5>FIND US</h5>
+                        <p>Patraikou 11A<br>1048, Nicosia</p>
+                        <p><a data-fancybox data-type="iframe" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1630.8169314087277!2d33.396017658140025!3d35.16575099507942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de179c253c32a9%3A0x9292acec299b794f!2sString%20Theory%20Music%20School!5e0!3m2!1sen!2s!4v1574847950838!5m2!1sen!2s" href="javascript:;">
+                            Google Maps</a></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="socialMedia"> 
+                            <h5>MEDIA</h5>
+                            <div class="row justify-content-md-left">
+                                <div class="col-md-auto socialIcon">
+                                    <a href="https://www.youtube.com/channel/UCa51W3ukQzjW0eAseuwXGbQ" target="_blank">
+                                        <img alt="YouTube" src="img/icon-youtube_50.png" width="50" height="50">
+                                    </a>
+                                </div>
+                                <div class="col-md-auto socialIcon">
+                                    <a href="https://www.facebook.com/StringTheoryCy/" target="_blank">
+                                        <img alt="Facebook" src="img/icon-facebook_50.png" width="50" height="50">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>               
+                    </div>            
+
+                    <div class="col-md-4">
+                        <h5>CONTACT US</h5>
+                        <p>by phone: <a href="tel:0035799778399">+357 99778399</a></p>
+                        <p>via email: <a href="mailto:stefanos.koutelis@yahoo.com">stefanos.koutelis@yahoo.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright" class="copyrightSection">
+
+            <div class="col-md-12 text-center">
+                <p>&copy; All Rights Reserved Koutelis 2019</p>
             </div>
 
-        </div>
+        </div>  
         
+        <!-- JavaScripts -->
         <script src="js/jquery.superslides.min.js"></script>
         <script src="js/typed.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.easypiechart.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/script.js"></script>
 
     </body>
 
 </html>
-<!--comment-->
