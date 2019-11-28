@@ -7,22 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="img/favicon.png">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" type="text/css" href="css/superslides.css">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/superslides.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
         <script src="js/jquery.min.js"></script>
         
     </head>
 
     <body>
 
-        <!-- Website preloader screen -->
         <div class="loader">
             <div class="inner"></div>
         </div>
 
-        <!-- Header/Slides section (top) / photo bkgr -->
+        <!-- Header/Slides section (top) -->
         <div id="slides">
 
             <div class="overlay"></div>
@@ -51,7 +50,7 @@
             
         </div>
 
-        <!-- Navigator menu section (main) / grey bkgr -->
+        <!-- Navigator menu section (main) -->
         <nav id="navigation" nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">HOME</a>
 
@@ -63,13 +62,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#lessons">LESSONS</a>
+                        <a class="nav-link" href="#about">LESSONS</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#pricing">PRICING</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#tutors">TUTORS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#videos">VIDEOS</a>
@@ -81,39 +77,27 @@
             </div>
         </nav>
 
-        <!-- About section / photo bkgr -->
-        <div id="about" class="aboutSection">
+        <!-- VideoAd section -->
+        <div id="videoAd" class="videoAdSection">
 
-            <div class="container">
-
-                <div class="row text-center">
-                    <div class="col">
-                        <h5 class="white">String Theory CY is a music school located in Nicosia, Cyprus</h5> 
-                    </div>
-                </div>
-
-                <div class="row text-center">
-                    <div class="col">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KV6AtgLzkTo?controls=0&autohide=1&loop=1&playlist=KV6AtgLzkTo" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-                    </div>
-                </div>
-
+            <div class="text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KV6AtgLzkTo?controls=0&autohide=1&loop=1&playlist=KV6AtgLzkTo" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
             </div>
 
         </div>
 
-        <!-- Lessons section / grey bkgr -->
-        <div id="lessons" class="section">
+        <!-- About section -->
+        <div id="about" class="section">
 
             <div class="container">
 
-                <div class="row text-center">
-                    <div class="col">
-                        <h3>LESSONS</h3>
-                    </div>
+                <div class="row">
+
+                    <h5>String Theory CY is a music school located in Nicosia, Cyprus</h5>
+                
                 </div>
 
-                <div class="row">
+                <div class="row section">
 
                     <div class="col-md-1">
                     </div>
@@ -151,7 +135,7 @@
             </div>
         </div>
 
-        <!-- Pricing section / photo bkgr -->
+        <!-- Pricing section -->
         <div id="pricing" class="section pricingSection">
 
             <div class="container">
@@ -249,151 +233,61 @@
             </div>
         </div>
 
-        <!-- Tutors section / grey bkgr -->
-        <div id="tutors" class="section tutorSection">
+        <!-- Video Portfolio section -->
+        <div id="videos" class="section">
 
-            <div class="container">
-
-                <div class="row text-center">
-                    <div class="col">
-                        <h3>TUTORS</h3>
+                <div class="container">
+    
+                    <div class="row">
+    
+                        <div class="heading">
+                            <h3>VIDEOS</h3>
+                        </div>
+    
+                        <div class="filter">
+    
+                            <ul id="filters">
+    
+                                <li><a href="#" data-filter="*" class="current">All</a></li>
+                                <li><a href="#" data-filter=".guitar">Guitar</a></li>
+                                <li><a href="#" data-filter=".piano">Piano</a></li>
+                                <li><a href="#" data-filter=".drums">Drums</a></li>
+    
+                            </ul>
+    
+                        </div>
+    
+                        <div class="itemsContainer">
+    
+                            <ul class="items">
+                                  
+                                <li onclick="" class="piano col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                    <div class="item">
+                                        <div class="icons">
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=bLM9RsNHGqQ">
+                                                Play
+                                            </a>
+                                        </div>
+                                        <iframe src="https://www.youtube.com/embed/bLM9RsNHGqQ?controls=0&autohide=1&playlist=bLM9RsNHGqQ" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                                    </div>                                            
+                                </li>
+    
+                                <li onclick="" class="piano col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                    <div class="item">
+                                        <div class="icons">
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=mBPfhBnXpmw">
+                                                Play
+                                            </a>
+                                        </div>
+                                        <iframe src="https://www.youtube.com/embed/mBPfhBnXpmw?controls=0&autohide=1&playlist=mBPfhBnXpmw" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                                    </div>                                  
+                                </li>
+    
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <!-- guitarist -->
-                <div class="row text-center bottomBorder">
-
-                    <div class="col-md-4">Guitar photo</div>
-
-                    <div class="col-md-4">Stefanos Koutelis</div>
-
-                    <div class="col-md-4">Bio</div>
-
-                </div>
-
-                <!-- pianist -->
-                <div class="row text-center bottomBorder">
-
-                    <div class="col-md-4">Piano photo</div>
-
-                    <div class="col-md-4">Evridiki Mallouri</div>
-
-                    <div class="col-md-4">Bio</div>
-
-                </div>
-
-                <!-- drummer -->
-                <div class="row text-center">
-
-                    <div class="col-md-4">Drums photo</div>
-
-                    <div class="col-md-4">Stella Kouloukousa</div>
-
-                    <div class="col-md-4">Bio</div>
-
-                </div>
-
             </div>
-        </div>
-
-        <!-- Videos section / photo bkgr -->
-        <div id="videos" class="section videoSection">
-
-            <div class="container">
-
-                <div class="row">
-                    <div class="col text-center">
-                        <h3>STUDENT VIDEOS</h3>
-                    </div>
-                </div>
-                
-                <!-- PLAYER CONTAINER -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-6">
-
-                        <!-- THE YOUTUBE PLAYER -->
-                        <div class="vid-container">
-                            <iframe id="vid_frame" src="http://www.youtube.com/embed/RxrJY1BkYRw?controls=0&autohide=1" frameborder="0" width="560" height="315"></iframe>
-                        </div>
-
-                    </div>
-                </div>
-                
-                <div class="row d-flex justify-content-center">
-
-                    <!-- LEFT ARROW -->
-                    <div class="col-1 my-auto">
-                        <div class="arrow-left"></div>
-                    </div>
-
-                    <div class="col-10">
-
-                        <!-- THE PLAYLIST -->
-                        <div class="vid-list-container">
-                            <div class="vid-list">
-                                
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/RxrJY1BkYRw?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/RxrJY1BkYRw/0.jpg"></div>
-                                    <div class="desc">Dimitris Dimitriou - Hail to the King by Avenged Sevenfold [04.08.2017]</div>
-                                </div>
-                                
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/4UmxPfHdTQM?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/4UmxPfHdTQM/0.jpg"></div>
-                                    <div class="desc">Panayiotis Kyriakou - Man of Sorrows by Bruce Dickinson [13.08.2016]</div>
-                                </div>
-                
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/1dLxcL87zRA?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="http://img.youtube.com/vi/1dLxcL87zRA/0.jpg"></div>
-                                    <div class="desc">Marios Papademetriou – Same Blues Different Story [10.10.2016]</div>
-                                </div>
-
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/ZQ1j2B_QJws?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/ZQ1j2B_QJws/0.jpg"></div>
-                                    <div class="desc">Christos Michaelides & Phaedra Vasiliou - Frosty the Snowman [25.12.2017]</div>
-                                </div>
-                
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CSd0LV3r2YU?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/CSd0LV3r2YU/0.jpg"></div>
-                                    <div class="desc">Giorgos Erotokritou - I Love R&R by Joan Jett [25.01.2014]</div>
-                                </div>
-                
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/zx_g37FUjF4?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/zx_g37FUjF4/0.jpg"></div>
-                                    <div class="desc">Alkis Kyriakides - We Are the Champions by Queen [13.08.2013]</div>
-                                </div>
-                
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/_Q7AXPTVO0g?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/_Q7AXPTVO0g/0.jpg"></div>
-                                    <div class="desc">Giorgos Togkas - Smoke on the Water [21.07.2013]</div>
-                                </div>
-                                
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/ruiOqfhat3g?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/ruiOqfhat3g/0.jpg"></div>
-                                    <div class="desc">Othonia Constantinou & Iraklis Irakleous - Synodevomai by Pantelides [01.08.2013]</div>
-                                </div>
-
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/bLM9RsNHGqQ?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/bLM9RsNHGqQ/0.jpg"></div>
-                                    <div class="desc">Photis Demetriades - Bluesy Jam [25.07.2019]</div>
-                                </div>
-
-                                <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/mBPfhBnXpmw?autoplay=1&controls=0&autohide=1'">
-                                    <div class="thumb"><img src="https://img.youtube.com/vi/mBPfhBnXpmw/0.jpg"></div>
-                                    <div class="desc">Chrysavgi Demetriade - Swan Lake by Tchaikovsky [25.07.2019]</div>
-                                </div>
-                
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- RIGHT ARROW -->
-                    <div class="col-1 my-auto">
-                        <div class="arrow-right"></div>
-                    </div>
-
-                </div>
-            </div>  
-        </div>
 
         <!-- Contact section (bottom) -->
         <div id="contact" class="contactSection section">
@@ -434,7 +328,6 @@
             </div>
         </div>
 
-        <!-- Copyright section (bottom) -->
         <div id="copyright" class="copyrightSection">
 
             <div class="col-md-12 text-center">

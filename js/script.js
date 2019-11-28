@@ -1,7 +1,7 @@
 $(window).on("load", function() {
 
-    $(".loader .inner").fadeOut(600, function() {
-        $(".loader").fadeOut(850);
+    $(".loader .inner").fadeOut(500, function() {
+        $(".loader").fadeOut(750);
         
     });
 
@@ -15,10 +15,23 @@ $(window).on("load", function() {
         }
 
     });
-    
+
 });
 
 $(document).ready(function() {
+
+    $(".arrow-right").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "+=336"
+        }, 750);
+    });
+    $(".arrow-left").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "-=336"
+        }, 750);
+    });
     
     $('#slides').superslides({
         animation: 'fade',
