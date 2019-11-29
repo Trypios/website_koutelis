@@ -124,12 +124,6 @@ h3, h4, h5 {
     max-width: 100%;
 }
 
-.bottomBorder {
-    border-style: dotted;
-    border-width: 0 0 1px 0;
-    border-color: #ca4a00;
-}
-
 #navigation {
     background-color: rgb(30,30,30);
     padding: 10px 10px;
@@ -269,12 +263,35 @@ h3, h4, h5 {
     z-index: 10;
 }
 
+.tutorSection {
+    max-width: 70%;
+}
+
+.bottom-margin {
+    margin: 0 0 30px 0;
+}
+
+.tutor {
+    padding: 20px 0;
+    border-style: dotted;
+    border-width: 1px 0 0 0;
+    border-color: #ca4a00;
+}
+
+.musicIcon {
+    filter: invert(100%);
+}
+
+.musicIcon:hover {
+    filter: initial;
+}
+
 .videoSection {
     background-image: url(../img/bkgr1.png);
 }
 
 .socialIcon:hover {
-    background-color: #ca4a00;
+    filter: invert(100%);
 }
 
 .copyrightSection {
