@@ -1,0 +1,4 @@
+host name: ftp.koutelis.com
+port: 21
+username: koutelis
+password: T********!

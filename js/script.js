@@ -1,44 +1,26 @@
 $(window).on("load", function() {
 
+    // preloader
+    
     $(".loader .inner").fadeOut(500, function() {
         $(".loader").fadeOut(750);
         
     });
 
-    $(".items").isotope({
-
-        filter: '*',
-        animationOptions: {
-            duration:1500,
-            easing: 'linear',
-            queue: false
-        }
-
-    });
-
 });
 
 $(document).ready(function() {
-
-    $(".arrow-right").bind("click", function (event) {
-        event.preventDefault();
-        $(".vid-list-container").stop().animate({
-            scrollLeft: "+=336"
-        }, 750);
-    });
-    $(".arrow-left").bind("click", function (event) {
-        event.preventDefault();
-        $(".vid-list-container").stop().animate({
-            scrollLeft: "-=336"
-        }, 750);
-    });
     
+    // Header-slides
+
     $('#slides').superslides({
         animation: 'fade',
         play: 3000,
         pagination: false
     });
 
+    // Header-title
+    
     var typed = new Typed(".typed", {
         strings: ["Guitar", "Piano", "Drums", "Vocals", "Music Technology"],
         typeSpeed: 80,
@@ -49,6 +31,8 @@ $(document).ready(function() {
         fadeOutDelay: 150
     });
 
+    // Navigator bar
+    
     $("#navigation li a").click(function(e) {
         e.preventDefault();
 
@@ -77,30 +61,12 @@ $(document).ready(function() {
         }
     }
 
+    // Fancybox 3
+    
     $("[data-fancybox]").fancybox();
 
-    $("#filters a").click(function() {
-
-        $("#filters .current").removeClass("current");
-        $(this).addClass("current");
-
-        var selector = $(this).attr("data-filter");
-
-        $(".items").isotope({
-
-            filter: selector,
-            animationOptions: {
-                duration:1500,
-                easing: 'linear',
-                queue: false
-            }
+    // Owl carousel (priceSection)
     
-        });
-
-        return false;
-
-    });
-
     $('.owl-carousel').owlCarousel({
         loop: false,
         items: 4,
@@ -144,5 +110,24 @@ $(document).ready(function() {
         }
 
     });
+
+    // videoSection-playlist-arrows
+
+    $(".arrow-right").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "+=336"
+        }, 750);
+    });
+    $(".arrow-left").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "-=336"
+        }, 750);
+    });
+
+    // current year (copyrightSection)
+    
+    document.getElementById("year").innerHTML = new Date().getFullYear();
 
 });
