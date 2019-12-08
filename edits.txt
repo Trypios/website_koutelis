@@ -1,5 +1,4 @@
-git commit -m "comments in style.css and script.js, removed isotope.js, fixed responsiveness, added tutors bio in lightbox, SEO (schema, gtag.js, geotag, sitemap.xml, keywords, metas)"
-
+git commit -m "fixed socials, tutors"
 
 animations
 pagespeed
